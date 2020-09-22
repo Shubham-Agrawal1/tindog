@@ -20,6 +20,14 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+
+  <style type="text/css">
+    a img{
+      width: 35%;
+      margin: 20px;
+      border-radius: 25%;
+    }
+  </style>
 </head>
 
 
@@ -214,6 +222,29 @@
       <h3 class="big-heading">Find the True Love of Your Dog's Life Today.</h3>
       <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
       <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+    </div>
+  </section>
+
+
+        <!-- Myfeed -->
+
+  <section id="Myfeed" >
+    <div class="container-fluid">
+  <h3 class="big-heading">Instagram Feed.</h3>
+  <div id="Myfeed-container"></div>
+
+
+
+<script src="file.js"></script>
+<script type="text/javascript">
+var myData = new Myfeed({
+get: 'user',
+target: "Myfeed-container",
+  resolution: 'low_resolution',
+accessToken: 'IGQVJWZAkI0Um9ZAcVU4bjJvdWJwSHE0dmk2Y0R4UXQ5MjVyVGNpNjNYSmRqcHkzRERBOFVydFJnTEpoRzFnYzRFcVQ5bmM4bGhISkJnSXB1YTc4NC1YRkdhRjZAVSXNRUXhkd3BBUERFRDFmb3lyWTVObwZDZD'
+});
+myData.run();
+</script>
     </div>
   </section>
 
